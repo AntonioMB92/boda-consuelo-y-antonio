@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/vendors/css/grid.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Consuelo y Antonio</title>
+  </head>
+
+  <body >
+    <header id="header">
+      <!-- <div class="center" style="padding-top: 70px;">¡Nos casamos!</div> -->
+    </header>
+    <section id="us">
+      <div class="row" id="nosotros">
+        <h1>Consuelo</h1>
+        <h1>&</h1>
+        <h1>Antonio</h1>
+        <h3 class="sub-header">30 - Noviembre - 2024</h3>
+        <p class="center">Tepatitlán, Jalisco</p>
+      </div>
+    </section>
+    <section id="song">
+      <audio id="audio" autoplay loop preload="auto" class="center">
+        <source src="/src/audio/Married-Life.mp3" type="audio/mpeg">
+      </audio>
+      <div class="play-center">
+        <div id="playBtn" class="play-box" onclick="playPauseSong()">
+          <i id="playIcon" class="fas fa-play"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <blockquote class="center">
+        Que nuestro amor sea como un vino añejo, que se haga más profundo y
+        valioso con el tiempo.
+      </blockquote>
+    </section>
+    <section id="eventos">
+      <div class="row">
+        <h2>Ceremonia y Recepción</h2>
+        <p class="long-copy">
+          Gracias por estar con nosotros y permitirnos compartirlo contigo, te
+          dejamos las ubicaciones del evento para que llegues sin contratiempos
+          a este momento tan especial para nosotros.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div class="event-box">
+            <div>
+              <h3>Ceremonia</h3>
+            </div>
+            <div class="place-actual">
+              <h4>Santuario del Señor de la Misericordia</h4>
+            </div>
+            <div class="place-direction">
+              <p>Calle Hidalgo 177</p>
+              <p>Centro</p>
+              <p>Tepatitlán, Jalisco</p>
+            </div>
+            <div class="place-time">
+              <p>4:30 PM</p>
+            </div>
+            <div>
+              <a
+                class="btn btn-full"
+                href="https://maps.app.goo.gl/8jLtn186V81WGtNG6"
+                >Cómo llegar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="event-box">
+            <div>
+              <h3>Recepción</h3>
+            </div>
+            <div class="place-actual">
+              <h4>KACIA Eventos</h4>
+            </div>
+            <div class="place-direction">
+              <p>Calle Galerías Fraccionamiento Galerías</p>
+              <p>Las Aguilillas</p>
+              <p>Tepatitlán, Jalisco</p>
+            </div>
+            <div class="place-time">
+              <p>7:00 PM</p>
+            </div>
+            <div>
+              <a
+                class="btn btn-full"
+                href="https://maps.app.goo.gl/RQMusYQFb5friQyy5"
+                >Cómo llegar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="countdown">
+      <div class="row">
+        <h2>Reserva la fecha</h2>
+        <h3 class="sub-header">Sábado 30 de Noviembre 2024</h3>
+        <p class="faltan">Faltan:</p>
+      </div>
+
+      <div class="row">
+        <div class="col timer-box">
+          <h3 class="day">time</h3>
+          <h3>Dias</h3>
+        </div>
+        <div class="col timer-box">
+          <h3 class="hour">time</h3>
+          <h3>Hrs</h3>
+        </div>
+        <div class="col timer-box">
+          <h3 class="minute">time</h3>
+          <h3>Min</h3>
+        </div>
+        <div class="col timer-box">
+          <h3 class="second">time</h3>
+          <h3>Seg</h3>
+        </div>
+      </div>
+    </section>
+    <section id="vestimenta">
+      <div class="row">
+        <h2>Código de vestimenta</h2>
+        <h3 class="center">RIGUROSO FORMAL</h3>
+      </div>
+    </section>
+    <section id="padres-y-padrinos">
+      <div class="row">
+        <h2>Nuestros Padres y Padrinos</h2>
+        <!-- <div id="pp-tab-btns">
+          <span>Padres</span>
+          <span>Padrinos</span>
+        </div> -->
+      </div>
+      <div class="row center">
+        <div id="padres" class="col span-1-of-2">
+          <div id="padres-novia" class="box">
+            <h4>Padres de la Novia</h4>
+            <p>Ramón García Rodriguez</p>
+            <p>María de la Luz Casillas Pérez</p>
+          </div>
+          <div id="padres-novio" class="box">
+            <h4>Padres del Novio</h4>
+            <p>José Horacio Miramontes Parra</p>
+            <p>María Esther Beas Carrillo</p>
+          </div>
+        </div>
+        <div id="padrinos" class="col span-1-of-2">
+          <div id="padrinos" class="box">
+            <h4>Nuestros Padrinos</h4>
+          </div>
+          <div id="velacion" class="box">
+            <h5>Velación</h5>
+            <p>Jaime García Rodriguez</p>
+            <p>Ana Rosa de León García</p>
+          </div>
+          <div id="arras" class="box">
+            <h5>Arras</h5>
+            <p>Eduardo Miramontes Beas</p>
+            <p>Ana Karent Ramirez Arellano</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mesa">
+      <div class="row">
+        <h2>Mesa de Regalos</h2>
+        <p class="long-copy">
+          El regalo es opcional, lo más importante para nosotros, es tu compañía
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div class="gift-box">
+            <div class="img-container">
+              <img
+                src="src/media/liverpool-white.webp"
+                alt="liverpool-logo"
+                class="mesa-logo"
+              />
+            </div>
+            <div>
+              <p>Evento: 51451914</p>
+            </div>
+            <div>
+              <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51451914" class="btn btn-full">Ir a tienda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="gift-box">
+            <div class="img-container">
+              <img
+                src="src/media/Logo-Amazon.jpg"
+                alt="liverpool-logo"
+                class="mesa-logo amazon-logo"
+              />
+            </div>
+            <div>
+              <p>Evento: Boda Consuelo y Antonio</p>
+            </div>
+            <div>
+              <a href="https://www.amazon.com.mx/wedding/share/Boda-Consuelo-y-Antonio" class="btn btn-full">Ir a tienda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="confirmar">
+      <div class="row">
+        <h2>¡Confirma tu asistencia!</h2>
+        <div class="center">
+          <a
+            class="btn btn-full"
+            href="https://forms.gle/C1T7LqjMCAdR4bBy9"
+            >Confirmar Asistencia</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="hospedaje">
+      <div class="row">
+        <h2>Recomendación de Hospedaje</h2>
+        <!-- <p class="long-copy">
+          Recuerda mencionar el evento al reservar para obtener un descuento
+        </p> -->
+      </div>
+      <div class="row center">
+        <div class="col span-1-of-2 hotel-card">
+          <h3>Hotel Real Alteño</h3>
+          <div class="row container">
+            <span class="col timer-box">
+              <a href="https://maps.app.goo.gl/2yyS9pveSNgSYPFx7">
+                <i class="fa-solid fa-location-dot icon-big"></i>
+              </a>
+            </span>
+            <span class="col timer-box">
+              <a href="tel:+523787813908">
+                <i class="fa-solid fa-phone icon-big"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col span-1-of-2 hotel-card">
+          <h3>Hotel Fiesta Alteña</h3>
+          <div class="row container">
+            <span class="col timer-box">
+              <a href="https://maps.app.goo.gl/FPBkw5aE1BqqvfGw7">
+                <i class="fa-solid fa-location-dot icon-big"></i>
+              </a>
+            </span>
+            <span class="col timer-box">
+              <a href="tel:+523787822947">
+                <i class="fa-solid fa-phone icon-big"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="footer-nav">
+          <a href="#">Ir al inicio</a>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <p>Copyright &copy; 2024 by Antonio MB. All rights reserved.</p>
+      </div> -->
+    </footer>
+    <script defer src="src/js/app.js"></script>
+  </body>
+</html>
