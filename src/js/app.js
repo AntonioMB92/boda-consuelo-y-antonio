@@ -33,7 +33,7 @@ const icon = document.getElementById('playIcon');
 
 function isPlaying(audelem) { return !audelem.paused; }
 
-export function playPauseSong() {
+function playPauseSong() {
     if ( isPlaying(audio) ) {
         audio.pause();
         icon.classList.remove("fa-pause");
@@ -45,3 +45,12 @@ export function playPauseSong() {
     }
 }
 
+const playBtn = document.getElementById("playBtn");
+playBtn.onclick = playPauseSong;
+
+document.body.onload = function() {
+    if ( isPlaying(audio) ) {
+        icon.classList.add("fa-pause");
+        icon.classList.remove("fa-play");
+    }
+  }
