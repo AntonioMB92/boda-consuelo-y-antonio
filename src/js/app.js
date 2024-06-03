@@ -33,7 +33,7 @@ const icon = document.getElementById('playIcon');
 
 function isPlaying(audelem) { return !audelem.paused; }
 
-function playPauseSong() {
+export function playPauseSong() {
     if ( isPlaying(audio) ) {
         audio.pause();
         icon.classList.remove("fa-pause");
