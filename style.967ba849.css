@@ -254,6 +254,15 @@ blockquote:before {
     left: -5px;
 }
 
+blockquote:after {
+    content: "\201D";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 5px;
+}
+
 /* ----------------------------------------------- */
 /* BOXES */
 /* ----------------------------------------------- */

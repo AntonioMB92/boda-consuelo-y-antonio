@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"src/js/app.js":[function(require,module,exports) {
 var countdown = function countdown() {
-  var countDate = new Date('November 30, 2024 16:00:00').getTime();
+  var countDate = new Date('November 30, 2024 16:30:00').getTime();
   var now = new Date();
   var gap = countDate - now;
 
@@ -192,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59454" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55593" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
